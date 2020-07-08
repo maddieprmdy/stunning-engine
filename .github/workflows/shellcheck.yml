@@ -1,16 +1,15 @@
-# Shellcheck any shell files in the repository
-
 on:
   push:
-    branches:
+    branch:
       - master
 
 name: 'Trigger: Push action'
 
 jobs:
   shellcheck:
+    name: Shellcheck
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Run ShellCheck
-      uses: stunning-engine/.github/workflows
+      uses: maddieprmdy/action-shellcheck@master
