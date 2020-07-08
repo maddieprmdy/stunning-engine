@@ -1,0 +1,15 @@
+on:
+  push:
+    branch:
+      - master
+
+name: 'Trigger: check spelling in .md files'
+
+jobs:
+  proselint:
+    name: Proselint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Run proselint
+      uses: maddieprmdy/stunning-engine@master
