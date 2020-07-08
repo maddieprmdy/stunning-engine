@@ -23,4 +23,4 @@ jobs:
     - uses: actions/checkout@master
  # Runs a single command using the runners shell
     - name: Run ShellCheck
-      uses: ludeeus/action-shellcheck@master
+      uses: maddieprmdy/stunning-engine@master
