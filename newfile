@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+function pidwait {
+  sleep 60 & bg
+  wait $!
+  }
+  pidwait
