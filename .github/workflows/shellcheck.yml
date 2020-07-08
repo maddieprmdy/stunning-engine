@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run ShellCheck
-      uses: stunning-engine/.github/workflows/shellcheck.yml
+      uses: stunning-engine/.github/workflows
