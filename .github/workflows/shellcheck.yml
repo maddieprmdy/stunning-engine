@@ -10,6 +10,6 @@ jobs:
     name: Shellcheck
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@master 
     - name: Run ShellCheck
-      uses: maddieprmdy/action-shellcheck@master
+      uses: maddieprmdy/action-shellcheck
